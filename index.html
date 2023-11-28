@@ -1,0 +1,488 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CEKA PHOTOGRAPHY & CINEMATIC CONCEPTS </title>
+	<script>
+		function submitForm() {
+  // Fetch form values
+  var name = document.getElementById('name').value;
+  var phone = document.getElementById('phone').value;
+  var request = document.getElementById('request').value;
+  var additionalText = document.getElementById('additionalText').value;
+
+  // Validate form fields (you can add more validation logic as needed)
+  if (!name || !phone || !request) {
+    alert('Please fill out all required fields.');
+    return;
+  }
+
+  // Construct email body
+  var emailBody = 'Name: ' + name + '\n';
+  emailBody += 'Phone: ' + phone + '\n';
+  emailBody += 'Request: ' + request + '\n';
+  emailBody += 'Additional Text: ' + additionalText + '\n';
+
+  // Simulate sending an email (replace with your actual backend logic)
+  alert('Email sent!\n\n' + emailBody);
+
+  // Optionally, you can reset the form after submission
+  document.getElementById('myForm').reset();
+}
+
+	</script>
+</head>
+
+<body>
+	<h2>
+		<nav id="nav">
+            <div class="logo"><img src="photos/logo.png"></div>
+			<ul>
+			<li class="active"> <a href="#">HOME</a></li>	
+			<li> <a href="#">SERVICES</a>
+				<ul>
+					<li><a href="#">Weddings</a></li>
+					<li><a href="#">Introduction</a></li>
+					<li><a href="#">Showers</a></li>
+					<li><a href="#">seminars</a></li>
+					<li><a href="#">Confrences</a></li>
+
+				</ul>
+			</li>	
+			<li> <a href="#">GALLERY</a>
+					<ul>
+					<li><a href="WEDDING.HTML">Weddings</a></li>
+					<li><a href="introduction.html">Introduction</a></li>
+					<li><a href="showers.html">Showers</a></li>
+					<li><a href="#">seminars</a></li>
+					<li><a href="#">Confrences</a></li>
+
+				</ul>
+
+			</li>	
+			<li> <a href="#">PORTIFOLIO </a></li>	
+			<li> <a href="#">ABOUT US</a>
+				<ul>
+                    <li><a href="#about us">About company</a></li>
+					<li><a href="#team">Our Members</a></li>
+					<li><a href="map.html">Our Location</a></li>
+					
+				</ul>
+			</li>	
+			<li> <a href="#">CONTACT US </a>
+
+				<ul>
+					<li><a href="https://instagram.com/ssekatawa tonny duckxy">Instagram</a></li>
+					<li><a href="https://facebook.com/dhat urban ssekatawa">Faceboook</a></li>
+					<li><a href="https://twitter.com/life of ceka ">Twitter</a></li>
+					<li><a href=https://wa.me/+256705773272>Whatsapp</a></li>
+					<li><a href="#form">Email us</a></li>
+                    
+				</ul>
+			</li>	
+            
+            </ul>	
+		</nav>
+       </h2>
+
+
+ <main>
+         <div class="welcome-text">
+             <h1><font color="dodgerblue">CEKA PHOTOGRAPHY &</font>  CINEMATIC CONCEPTS</h1>
+             <a href="tel:+256705773272 or +256709625917"><font color="dodgerblue">contact</font> <font color="#ffffff">us</font></a>
+         </div>
+     </main>
+     <br>
+      <header class="bgimg">
+    <div class="about-us">
+      <div class="overlay">
+      	
+        <h1 id="about us"><font color="dodgerblue" text-align="center">About Us</font></h1>
+       
+      </div>
+    <div class="container">
+      <section class="history">
+        <h2>Our History</h2>
+        <p>Ceka Photography & Cinematic Concepts Studio was founded in 2020 with a vision to redefine visual storytelling. Over the years, we have built a reputation for excellence, capturing timeless moments and delivering compelling cinematic experiences.</p>
+      </section>
+
+      <section class="team">
+        <h2 id="team">Meet Our Team</h2>
+        <div class="member">
+          <img src="photos/ceka.jpg" alt="Photographer 1">
+          <h3>SSEKATAWA TONNY</h3>
+          <p>Lead Photographer</p>
+        </div>
+
+        <div class="member">
+          <img src="photos/muks.jpg" alt="Cinematographer 1">
+          <h3 id="team">MUKISA GODFREY</h3>
+          <p>Lead Cinematographer</p>
+        </div>
+      </section>
+
+      <section class="mission">
+        <h2>Our Mission</h2>
+        <p>At Ceka, we are dedicated to capturing the essence of every moment with creativity and precision. Our mission is to provide clients with visually stunning photographs and cinematic creations that go beyond expectations, leaving a lasting impact.</p>
+      </section>
+
+      <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Address: 123 Main Street, Cityville</p>
+        <p>Email: info@cekastudio.com</p>
+        <p>Phone: 256 705773272 / 256709625917</p>
+      </section>
+      
+    </div>
+  </div>
+ </header>
+<section id="form" class="form">
+ <section class="contact-form">
+    <form id="myForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="request">Request:</label>
+      <textarea id="request" name="request" rows="4" required></textarea>
+
+      <label for="additionalText">Additional Text:</label>
+      <textarea id="additionalText" name="additionalText" rows="4"></textarea>
+
+      <button type="button" onclick="submitForm()"><a href="mailto:cekatonny@icloud.com">Submit</a></button>
+    </form>
+  </section>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Your Company. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
+<style>
+	*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+} 
+
+
+body{
+	
+    font-family: 'poppins', sans-serif;
+}
+
+nav{
+	background: #1b1b1b;
+	padding-top: 10px;
+   
+   
+}
+nav:after{
+	content: '';
+	clear: both;
+	display: table;
+    padding: 10px;
+    padding-bottom: 10px;
+    
+}
+
+nav .logo img{
+    width: 500px;
+   
+    float: left;
+    height: auto;
+    margin-left: auto;
+
+}
+
+nav ul{
+	float: right;
+	list-style: none;
+    margin-right: 40px;
+    font-family: cursive;
+    padding-top: 55px;
+    
+    
+}
+
+
+ul li.active a{
+	background-color: black;
+	color: white;
+    color: cornflowerblue;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff;
+    
+}
+nav ul li{
+    float: left;
+    display: inline-block;
+    background: #1b1b1b;
+    margin: 0 5px;
+    
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px; 
+}
+
+nav ul li a:hover{
+    color: cornflowerblue;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff;
+    
+    
+}
+
+nav ul ul li a:hover{
+    color: cornflowerblue;
+    box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff;
+     border-radius: 3px; 
+}
+
+nav ul ul{
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+nav ul li:hover > ul{
+     top: 70px;
+    opacity: 1;
+    visibility: visible; 
+}
+ 
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    
+}
+
+nav ul ul li a{
+    line-height: 50px;
+    
+}
+
+nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+main{
+      background-image: url(photos/bg.jpg);
+    
+    background-position: ;
+   
+    margin:  auto;
+    padding: 250px;
+   
+
+}
+
+
+
+
+  .welcome-text h1{
+    text-align: center;
+    color: #fff;
+
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: cursive;
+    position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.welcome-text a{
+	background-color: black;
+    border: 1px solid dodgerblue;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+   position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    transition: 0.6s ease;
+}
+.welcome-text a:hover{
+    background: #333333;
+    color: #333;
+    
+}
+ 
+ .bgimg{
+
+
+  background-image: url('photos/tg.jpg'); 
+  background-size: cover; 
+  background-position: auto ; 
+  background-repeat: no-repeat; 
+  width: 100%;
+  height: auto;
+  
+  
+  border: 1px solid #ccc;
+}
+    
+   
+
+ }
+
+.about-us header {
+	
+  position: absolute;
+  text-align: center;
+  padding: 100px 0;
+  color: dodgerblue;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-us header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us header h1 {
+  font-size: 3em;
+  margin: 0;
+
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+ 
+}
+
+.history h2,
+.team h2,
+.mission h2,
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: dodgerblue;
+  font-family: cursive;
+}
+
+.member {
+  margin: 20px;
+  text-align: center;
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.member h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  color: dodgerblue;
+  font-family: cursive;
+}
+
+.member p {
+  font-size: 1em;
+  color: white;
+}
+
+.contact p {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: white;
+}
+p{
+	color: white;
+}
+
+
+.form{
+	background-color: black;
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: dodgerblue;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+
+
+</style>
